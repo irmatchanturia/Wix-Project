@@ -1,0 +1,49 @@
+ @font-face {
+    font-family: "name-font";
+    src: url("../fonts/name-font.ttf") format("opentype");
+ }
+
+ @font-face {
+    font-family: "thin-font";
+    src: url("../fonts/extra-light.ttf") format("opentype");
+ }
+.container {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    gap: 300px
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.name{
+    margin-bottom: 13.5px;
+    font-family: "name-font";
+    letter-spacing: 3px;
+}
+.left-side{
+    text-align: center;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    gap:30px;
+}
+a{
+    color: black;
+    font-family: "thin-font";
+    font-weight: bolder;
+
+}
+.login-photo{
+    width: 22px;
+}
+#login{
+    gap: 5px;
+    color: turquoise;
+}

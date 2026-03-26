@@ -5,45 +5,54 @@
 
  @font-face {
     font-family: "thin-font";
-    src: url("../fonts/extra-light.ttf") format("opentype");
+    src: url("../fonts/light-font.ttf") format("opentype");
+ }
+ header{
+    position: fixed;
+    width: 100%;
  }
 .container {
     display: flex;
-    padding: 50px;
-    justify-content: center;
-    gap: 300px
+    padding: 40px;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-left: 18.5%;
 }
 
 .right-side{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
+    align-items: center;
 }
 .name{
-    margin-bottom: 13.5px;
+    margin-bottom: 14.5px; 
     font-family: "name-font";
-    letter-spacing: 3px;
+    font-size: larger;
+    letter-spacing: 4px;
+}
+.coach{
+   color: #555555;
+    font-family: "thin-font";
+    font-weight:600;
+    letter-spacing: 1px;
 }
 .left-side{
-    text-align: center;
-    padding: 5px;
+    place-items: center;
 }
 
 nav {
     display: flex;
     gap:30px;
 }
+
 a{
     color: black;
     font-family: "thin-font";
-    font-weight: bolder;
-
+    font-weight:600;
 }
 .login-photo{
-    width: 22px;
+    width: 30px;
 }
-#login{
+#login, .login{
     gap: 5px;
-    color: turquoise;
+    color: rgb(18, 169, 154);
 }

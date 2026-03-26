@@ -4,33 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Create Wix Bookings Site</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <title>Create Wix Bookings Sites </title>
 </head>
-<body>
-    
-    <header>
-        <div class="container">
-            <div class="left-side">
-            <p class="name">ALLAN JOHNSON</p>
-            <p class="coach">Personal Life Coach</p>
-            </div>
 
-            <div class="right-side">
-                <nav>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Plans</a>
-                <a href="#">Guides</a>
-                <a href="#">Contact</a>
-                <a href="#">Account</a>
-                <div id="login">
-                <a href="#" class="login"> <i class="fa-solid fa-circle-user"></i> Log In</a>
-                </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+<body>
+    <div id="header"></div>
+
+    <main>
+<div class="video-container">
+  <video class="video-bg" autoplay muted loop playsinline>
+    <source src="../images/first-page-video.mp4" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <P>AMBITION IS THE FIRST STEP TOWARDS</P>
+    <h1>SUCCESS</h1>
+    <h5>Now Availiable for Online Coaching</h5>
+    <button>Book Now</button>
+  </div>
+</div>
+
+<div class="aboutme">
+<div class="text">
+    <div class="header-line"></div>
+    <h2>ABOUT ME</h2>
+    <P>My name is Allan Johnson and I am a personal coach. 
+        My goal is to assist people identify and overcome obstacles 
+        in their lives and to maximize their potential. 
+        Through my coaching, I help people set goals, 
+        build the confidence and skills they need to achieve
+        success and develop a positive mindset and a sense of self-worth1.</P>
+    <P>As the famous American author, salesman and motivational speaker 
+        Zig Ziglar once said: “Success is the doing, not the getting; 
+        in the trying, not the triumph. Success is a personal standard, 
+        reaching for the highest that is in us, becoming all that we can be. 
+        If we do our best, we are a success.</P>
+        <button class="readmore">Read More</button>
+</div>
+<div class="img">
+    <!-- <img src="../images/about-me.jpeg" alt="person photo"> -->
+</div>
+</div>
+
+<div>
+    <div class="upper">
+    <div class="header-line"></div>
+    <h3>HOW I CAN HELP YOU</h3>
+</div>
+
+<div class="lower">
+    <div  class="box" >
+        <p>Health and Wellness Coaching</p>
+        <p>Transform your life, one healthy habit at a time.</p>
+        <div class="line"></div>
+        <p>$100.00</p>
+        <p>1 hour</p>
+        <button>Book Now</button>
+    </div>
+
+
+    <div class="box">
+        <p>Personal Life Coaching</p>
+        <p>Make, meet and exceed your personal and professional goals.</p>
+        <div class="line"></div>
+        <p>$100.00</p>
+        <p>1 hour</p>
+        <button>Book Now</button>
+    </div>
+
+    <div class="box">
+        <p>Career Coaching - Executive</p>
+        <p>Enhance yourn leadership and managment skills. Tailored to executives.</p>
+        <div class="line"></div>
+        <p>$250.00</p>
+        <p>1 hour 30 minutes</p>
+        <button>Book Now</button>
+    </div>
+</div>
+
+
+        
+</main>
+    
+    
+<script>
+    fetch("header.html")
+      .then(r => r.text())
+      .then(html => document.getElementById("header").innerHTML = html);
+</script>
+    
 </body>
 </html>

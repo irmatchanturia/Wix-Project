@@ -7,13 +7,16 @@
     font-family: "thin-font";
     src: url("../fonts/light-font.ttf") format("opentype");
  }
+
  header{
     position: fixed;
     width: 100%;
+    background-color: white;
+    z-index: 100;
  }
 .container {
     display: flex;
-    padding: 40px;
+    padding: 35px;
     justify-content: flex-start;
     gap: 100px;
     margin-left: 18.5%;

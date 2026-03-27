@@ -10,13 +10,14 @@
 
  header{
     position: fixed;
+    display: flex;
     width: 100%;
     background-color: white;
     z-index: 100;
  }
 .container {
     display: flex;
-    padding: 35px;
+    padding: 40px;
     justify-content: flex-start;
     gap: 100px;
     margin-left: 18.5%;

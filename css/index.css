@@ -132,24 +132,28 @@ button:hover{
 }
 
 .main-container{
-    position: relative;
-}
-
-.image{
-    min-height: 100vh;
+    display: flex;
     background-image: url(../images/site-background.jpeg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+/* .image{
+    min-height: 100vh;
+    background-image: url(../images/site-background.jpeg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
 
 .child-container {
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: left;
     align-items: left;
@@ -232,13 +236,11 @@ button:hover{
 
 
 .last-button{
-    /* width: fit-content; */
+    width: fit-content;
     background-color: black;
     color: white;
     padding: 12px 30px;
     border: 1px solid black;
-}
-.lastbtn{
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
 }

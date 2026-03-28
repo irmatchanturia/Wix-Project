@@ -11,27 +11,32 @@
  header{
     position: fixed;
     display: flex;
+    justify-content: center;
     width: 100%;
     background-color: white;
-    z-index: 100;
+    z-index: 5;
  }
 .container {
     display: flex;
-    padding: 40px;
-    justify-content: flex-start;
-    gap: 100px;
-    margin-left: 18.5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    gap: 8vw;
+    /* width: 100%; */
 }
 
 .right-side{
     display: flex;
     align-items: center;
+    font-size: 14px;
 }
 .name{
     margin-bottom: 14.5px; 
     font-family: "name-font";
     font-size: larger;
     letter-spacing: 4px;
+    /* min-width: 300px; */
+    text-align: center;
 }
 .coach{
    color: #555555;
@@ -45,7 +50,7 @@
 
 .header-nav {
     display: flex;
-    gap:30px;
+    gap:35px;
 }
 
 a{
@@ -60,3 +65,34 @@ a{
     gap: 5px;
     color: rgb(18, 169, 154);
 }
+
+
+
+
+@media screen and (max-width: 880px){
+    .right-side{
+        display: none;
+    }
+
+    header{
+        justify-content: flex-start; 
+    }
+  
+  /* ბურგერი გამოჩნდეს */
+  .menu-btn {
+    display: block;
+  }
+
+  /* მენიუ დაიმალოს თავიდან */
+  .nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  /* როცა დაკლიკებულია → გამოჩნდეს */
+  #menu-toggle:checked ~ .nav {
+    display: flex;
+  }
+}
+
+

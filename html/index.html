@@ -13,101 +13,97 @@
     <div id="header"></div>
 
     <main>
-<div class="video-container">
-  <video class="video-bg" autoplay muted loop playsinline>
-    <source src="../images/first-page-video.mp4" type="video/mp4">
-  </video>
+        <div class="video-container">
+            <video class="video-bg" autoplay muted loop playsinline>
+                <source src="../images/first-page-video.mp4" type="video/mp4">
+            </video>
 
-  <div class="content">
-    <P>AMBITION IS THE FIRST STEP TOWARDS</P>
-    <h1>SUCCESS</h1>
-    <h5>Now Availiable for Online Coaching</h5>
-    <button>Book Now</button>
-  </div>
-</div>
+            <div class="content">
+                <P>AMBITION IS THE FIRST STEP TOWARDS</P>
+                <h1>SUCCESS</h1>
+                <h5>Now Availiable for Online Coaching</h5>
+                <button>Book Now</button>
+            </div>
+        </div>
 
-<div class="aboutme">
-<div class="text">
-    <div class="header-line"></div>
-    <h2>ABOUT ME</h2>
-    <P>My name is Allan Johnson and I am a personal coach. 
-        My goal is to assist people identify and overcome obstacles 
-        in their lives and to maximize their potential. 
-        Through my coaching, I help people set goals, 
-        build the confidence and skills they need to achieve
-        success and develop a positive mindset and a sense of self-worth1.</P>
-    <P>As the famous American author, salesman and motivational speaker 
-        Zig Ziglar once said: “Success is the doing, not the getting; 
-        in the trying, not the triumph. Success is a personal standard, 
-        reaching for the highest that is in us, becoming all that we can be. 
-        If we do our best, we are a success.</P>
-        <button class="readmore">Read More</button>
-</div>
-<div class="img">
-</div>
-</div>
-
-
-<div class="main-container">
-
-<div class="image"></div>
-
-<div class="child-container">
-<div>
-    <div class="upper">
-    <div class="header-line-two"></div>
-    <h3>HOW I CAN <br> HELP YOU</h3>
-    </div>
-</div>
+        <div class="aboutme">
+            <div class="text">
+                <div class="header-line"></div>
+                <h2>ABOUT ME</h2>
+                <P>My name is Allan Johnson and I am a personal coach. 
+                    My goal is to assist people identify and overcome obstacles 
+                    in their lives and to maximize their potential. 
+                    Through my coaching, I help people set goals, 
+                    build the confidence and skills they need to achieve
+                    success and develop a positive mindset and a sense of self-worth1.</P>
+                <P>As the famous American author, salesman and motivational speaker 
+                    Zig Ziglar once said: “Success is the doing, not the getting; 
+                    in the trying, not the triumph. Success is a personal standard, 
+                    reaching for the highest that is in us, becoming all that we can be. 
+                    If we do our best, we are a success.</P>
+                    <button class="readmore">Read More</button>
+            </div>
+            <div class="img"></div>
+        </div>
 
 
-<div class="lower">
-    <div  class="box" >
-        <h4>Health and Wellness Coaching</h4>
-        <p>Transform your life, one healthy habit at a time.</p>
-        <div class="line"></div>
-        <h5>$100.00</h5>
-        <h6>1 hour</h6>
-        <button>Book Now</button>
-    </div>
+        <div class="main-container">
+
+            <div class="image"></div>
+
+            <div class="child-container">
+            <div>
+                <div class="upper">
+                <div class="header-line-two"></div>
+                <h3>HOW I CAN <br> HELP YOU</h3>
+                </div>
+            </div>
 
 
-    <div class="box">
-        <h4>Personal Life Coaching</h4>
-        <p>Make, meet and exceed your personal and professional goals.</p>
-        <div class="line"></div>
-        <h5>$100.00</h5>
-        <h6>1 hour</h6>
-        <button>Book Now</button>
-    </div>
-
-    <div class="box">
-        <h4>Career Coaching - Executive</h4>
-        <p>Enhance yourn leadership and managment skills. Tailored to executives.</p>
-        <div class="line"></div>
-        <h5>$250.00</h5>
-        <h6>1 hour 30 minutes</h6>
-        <button>Book Now</button>
-    </div>
-</div>
-    <div class="lastbtn">
-    <button class="last-button">More Services</button>
-</div>
-</div>
-
-</div>
+            <div class="lower">
+                <div  class="box" >
+                    <h4>Health and Wellness Coaching</h4>
+                    <p>Transform your life, one healthy habit at a time.</p>
+                    <div class="line"></div>
+                    <h5>$100.00</h5>
+                    <h6>1 hour</h6>
+                    <button>Book Now</button>
+                </div>
 
 
+                <div class="box">
+                    <h4>Personal Life Coaching</h4>
+                    <p>Make, meet and exceed your personal and professional goals.</p>
+                    <div class="line"></div>
+                    <h5>$100.00</h5>
+                    <h6>1 hour</h6>
+                    <button>Book Now</button>
+                </div>
 
-        
-</main>
+                <div class="box">
+                    <h4>Career Coaching - Executive</h4>
+                    <p>Enhance yourn leadership and managment skills. Tailored to executives.</p>
+                    <div class="line"></div>
+                    <h5>$250.00</h5>
+                    <h6>1 hour 30 minutes</h6>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="lastbtn"><button class="last-button">More Services</button></div>
+        </div>
+    </main>
     
-    
-<script>
-    fetch("header.html")
-      .then(r => r.text())
-      .then(html => document.getElementById("header").innerHTML = html);
-</script>
+    <div id="footer"></div>
+
+    <script>
+        fetch("../components/header.html")
+        .then(r => r.text())
+        .then(html => document.getElementById("header").innerHTML = html);
+
+        fetch("../components/footer.html")
+        .then(r => r.text())
+        .then(html => document.getElementById("footer").innerHTML = html);
+    </script>
     
 </body>
 </html>

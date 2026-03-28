@@ -43,7 +43,7 @@
     place-items: center;
 }
 
-nav {
+.header-nav {
     display: flex;
     gap:30px;
 }

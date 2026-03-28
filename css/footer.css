@@ -8,7 +8,7 @@
     src: url("../fonts/light-font.ttf") format("opentype");
  }
 
-.main{
+.footer-main{
     background-color: rgb(87 187 191);
     display: flex;
     justify-content: center;

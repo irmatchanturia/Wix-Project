@@ -20,7 +20,7 @@
     display: flex;
     padding-top: 40px;
     padding-bottom: 40px;
-    justify-content: space-between;
+    justify-content: center;
     gap: 8vw;
     /* width: 100%; */
 }
@@ -50,7 +50,7 @@
 
 .header-nav {
     display: flex;
-    gap:35px;
+    gap:40px;
 }
 
 a{
@@ -67,32 +67,5 @@ a{
 }
 
 
-
-
-@media screen and (max-width: 880px){
-    .right-side{
-        display: none;
-    }
-
-    header{
-        justify-content: flex-start; 
-    }
-  
-  /* ბურგერი გამოჩნდეს */
-  .menu-btn {
-    display: block;
-  }
-
-  /* მენიუ დაიმალოს თავიდან */
-  .nav {
-    display: none;
-    flex-direction: column;
-  }
-
-  /* როცა დაკლიკებულია → გამოჩნდეს */
-  #menu-toggle:checked ~ .nav {
-    display: flex;
-  }
-}
 
 

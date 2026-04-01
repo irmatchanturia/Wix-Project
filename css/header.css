@@ -15,12 +15,11 @@
     width: 100%;
     background-color: white;
     z-index: 5;
-    height: 130px;
  }
 .container {
     display: flex;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     justify-content: center;
     gap: 8vw;
 }
@@ -56,6 +55,9 @@ a{
     color: black;
     font-family: "thin-font";
     font-weight:600;
+}
+a:hover{
+    color: rgb(91, 168, 160);
 }
 .login-photo{
     width: 30px;

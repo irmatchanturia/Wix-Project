@@ -3,21 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/readmore.css">
-    <title>Create Wix Booking Sites</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/readmore.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Create Wix Bookings Sites</title>
 
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="left-side">
+            <p class="name">ALLAN JOHNSON</p>
+            <p class="coach">Personal Life Coach</p>
+            </div>
 
-    <h1>ABOUT ME</h1>
+            <div class="right-side">
+                <nav class="header-nav">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Plans</a>
+                <a href="#">Guides</a>
+                <a href="#">Contact</a>
+                <a href="#">Account</a>
+                <div id="login">
+                <a href="#" class="login"> <i class="fa-solid fa-circle-user"></i> Log In</a>
+                </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <div class="readmore-container">
-
+       <div class="readmore-first">
+        <div class="readmore-line"></div>
+        <h1>ABOUT ME</h1>
+        </div>
         <div class="readmore-text">
-        <p>My name is Allan Johnson and I am a personal coach. 
+
+        <div class="text-plus-photo">
+            <p>My name is Allan Johnson and I am a personal coach. 
             My goal is to assist people identify and overcome obstacles in their lives and to maximize their potential.
             Through my coaching, I help people set goals, build the confidence and skills they need to achieve success 
             and develop a positive mindset and a sense of self-worth.</p>
+        
+            <img class="readmore-photo"> </div>
 
         <p>As the famous American author, salesman and motivational speaker Zig Ziglar once said: “Success is the doing, not the getting; 
             in the trying, not the triumph. Success is a personal standard, reaching for the highest that is in us, becoming all that we can be.
@@ -46,7 +77,69 @@
 
  
     </div>
-
     
+<footer>
+<div class="footer-main">
+
+<div class="marcxena">
+
+<div class="footer-line"></div>
+<h3>CONTACT</h3>
+
+<div class="adrress">
+<p>500 Terry Francois Street</p>
+<p>San Francisco, CA 94158</p>
+</div>
+
+<div class="numbers">
+    <p>Tel: 123-456-7890</p>
+    <p>Fax: 123-456-7890</p>
+</div>
+
+<div class="info">
+    <p>info@mysite.com</p>
+</div>
+
+<div class="links">
+    <a href="https://www.facebook.com/wix" target="_blank">
+        <img src="../images/facebook-app-symbol.png" alt="facebook logo">
+    </a>
+    <a href="https://x.com/wix" target="_blank">
+        <img src="../images/twitter.png" alt="twitter logo">
+    </a>
+    <a href="https://www.instagram.com/wix/" target="_blank">
+        <img src="../images/instagram.png" alt="instagram logo">
+    </a>
+    <a href="https://www.youtube.com/user/Wix" target="_blank">
+        <img src="../images/youtube.png" alt="youtube logo">
+    </a>
+</div>
+
+<p>© 2023 by Personal Life Coach.
+    <br>Powered and secured by <a href="https://www.wix.com/?utm_campaign=vir_created_with">Wix</a></p>
+</div>
+<div class="marjvena">
+    <form>
+        <div class="name-field">
+        <label for="">Enter Your Name</label>
+        <input type="text">
+        </div>
+        <div class="email-field">
+        <label for="">Enter Your Email *</label>
+        <input type="email" required>
+        </div>
+        <div class="subject">
+        <label for="">Enter Your Subject</label>
+        <input type="text">
+        </div>
+        <div class="textarea">
+        <label for="">Message</label>
+        <textarea rows="8"></textarea>
+        </div>
+        <button class="footer-button" type="submit">Submit</button>
+    </form>
+</div>
+</div>
+</footer>
 </body>
 </html>

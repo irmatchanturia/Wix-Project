@@ -15,6 +15,7 @@
     width: 100%;
     background-color: white;
     z-index: 5;
+    height: 130px;
  }
 .container {
     display: flex;
@@ -22,7 +23,6 @@
     padding-bottom: 40px;
     justify-content: center;
     gap: 8vw;
-    /* width: 100%; */
 }
 
 .right-side{
@@ -35,7 +35,6 @@
     font-family: "name-font";
     font-size: larger;
     letter-spacing: 4px;
-    /* min-width: 300px; */
     text-align: center;
 }
 .coach{

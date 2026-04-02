@@ -16,6 +16,7 @@
     background-color: white;
     z-index: 5;
  }
+
 .container {
     display: flex;
     padding-top: 40px;
@@ -29,18 +30,22 @@
     align-items: center;
     font-size: 14px;
 }
+
 .name {
+    color: black;
     font-family: "name-font";
     font-size: larger;
     letter-spacing: 4px;
     text-align: center;
 }
+
 .coach{
    color: #555555;
     font-family: "thin-font";
     font-weight:600;
     letter-spacing: 1px;
 }
+
 .left-side{
     place-items: center;
     display: flex;
@@ -53,17 +58,19 @@
     gap:40px;
 }
 
-a{
+nav a{
     color: black;
     font-family: "thin-font";
     font-weight:600;
 }
-a:hover{
+nav a:hover{
     color: rgb(91, 168, 160);
 }
+
 .login-photo{
     width: 30px;
 }
+
 #login, .login{
     gap: 5px;
     color: rgb(18, 169, 154);

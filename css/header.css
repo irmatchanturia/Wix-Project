@@ -29,8 +29,7 @@
     align-items: center;
     font-size: 14px;
 }
-.name{
-    margin-bottom: 14.5px; 
+.name {
     font-family: "name-font";
     font-size: larger;
     letter-spacing: 4px;
@@ -44,6 +43,9 @@
 }
 .left-side{
     place-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .header-nav {

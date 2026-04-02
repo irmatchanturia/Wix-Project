@@ -9,9 +9,14 @@
     src: url("../fonts/light-font.ttf") format("opentype");
  }
  
- .body{
-    padding-top: 140px;
+ html{
+    scroll-behavior: smooth;
  }
+ 
+ div{
+    scroll-margin-top: 90px;
+ }
+ 
 .video-container{
     display: flex;
     justify-content: center;

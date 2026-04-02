@@ -32,7 +32,7 @@
     margin-bottom: 40px;
 }
 
-.marcxena h3{
+.footer-left h3{
     font-size: 20px;
     font-family: "name-font";
     letter-spacing: 5px;
@@ -45,7 +45,7 @@
     margin-top: 40px;
 }
 
-.marcxena {
+.footer-left {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -54,7 +54,7 @@
     max-width: 400px;
 }
 
-.marjvena{
+.footer-right{
     flex: 1;
     max-width: 500px;
 }

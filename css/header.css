@@ -55,7 +55,7 @@
 
 .header-nav {
     display: flex;
-    gap:40px;
+    gap:3vw;
 }
 
 nav a{
@@ -76,6 +76,32 @@ nav a:hover{
     color: rgb(18, 169, 154);
 }
 
+.burger-menu-icon{
+    width: 50px;
+    display: none;
+}
+@media screen and (max-width: 900px){
+    .burger-menu-icon{
+        display: block;
+    }
+    .header-nav{
+        display: none;
+    }
 
+    header{
+        justify-content: flex-start;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+    }
+
+
+
+}
+    
 
 

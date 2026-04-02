@@ -1,0 +1,45 @@
+ @font-face {
+    font-family: "name-font";
+    src: url("../fonts/name-font.ttf") format("opentype");
+ }
+
+ @font-face {
+    font-family: "thin-font";
+    src: url("../fonts/light-font.ttf") format("opentype");
+ }
+
+.main-services{
+    background-image: url(../images/site-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 90px;
+}
+
+.main-services h1{
+    padding-left: 15%;
+}
+
+.line-services{
+    width: 2.25rem;
+    height: 1.5px;
+    background-color: black;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 15%;
+}
+
+.main-services h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: "name-font";
+    margin-bottom: 10%;
+}
+
+.nav-services{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}

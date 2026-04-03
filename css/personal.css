@@ -1,0 +1,83 @@
+ @font-face {
+    font-family: "name-font";
+    src: url("../fonts/name-font.ttf") format("opentype");
+ }
+
+ @font-face {
+    font-family: "thin-font";
+    src: url("../fonts/light-font.ttf") format("opentype");
+ }
+
+.main-services{
+    background-image: url(../images/site-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 90px;
+}
+
+.main-services h1{
+    padding-left: 15%;
+}
+
+.line-services{
+    width: 2.25rem;
+    height: 1.5px;
+    background-color: black;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 15%;
+}
+
+.main-services h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: "name-font";
+    margin-bottom: 10%;
+}
+
+.nav-services{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.box-s {
+    justify-content: center;
+    background-color: white;
+    padding: 20px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding-top: 10%;
+}
+.services-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 8%;
+    padding-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "thin-font";
+
+}
+
+.box-s button{
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    border: 1px solid black;
+    align-self: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.box-s h2{
+    font-family: "thin-font";
+    font-weight: bold;
+    letter-spacing: 3px;
+}

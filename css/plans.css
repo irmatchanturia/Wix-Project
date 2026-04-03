@@ -15,8 +15,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
-    /* padding-left: 5%; */
-    /* padding-right: 5%; */
 }
 
 .main-plan h1{
@@ -80,13 +78,6 @@
 .back-color{
     background-color: rgba(255, 255, 255, 0.4);
 }
-
-/* .check p::before{
-    content: url(../images/chek.svg);
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-} */
 
 .icon-plan{
     width: 20px;

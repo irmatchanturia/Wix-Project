@@ -33,13 +33,22 @@
 }
 
 .content{
-    position: relative;
-    z-index: 1;
+    /* position: relative; */
+    /* z-index: 1; */
     color: black;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
+#btn{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    width: fit-content;
+    align-self: center;
+}
+
 .content p {
     font-size: clamp(14px, 2vw, 20px);
     font-weight: 600;
@@ -245,11 +254,6 @@ button:hover{
     margin-bottom: 50px;
 }
 
-#btn{
-    background-color: black;
-    color: white;
-    padding: 10px 15px;
-}
 
 #btn:hover{
     background-color: white;

@@ -1,0 +1,99 @@
+ @font-face {
+    font-family: "name-font";
+    src: url("../fonts/name-font.ttf") format("opentype");
+ }
+
+ @font-face {
+    font-family: "thin-font";
+    src: url("../fonts/light-font.ttf") format("opentype");
+ }
+.main-plan{
+    padding-top: 90px;
+    background-image: url(../images/site-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+}
+
+.main-plan h1{
+    font-family: "name-font";
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.main-p{
+    text-align: center;
+    font-family: "thin-font";
+    font-weight: bold;
+    padding-top: 2%;
+    margin-bottom: 5%;
+}
+
+.plans-box{
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    justify-content:center;
+    column-gap: 3%;
+    padding-bottom: 2%;
+}
+
+.box-plans{
+    text-align: center;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15%;
+    font-family: "thin-font";
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.main-plan h2{
+    font-size: 25px;
+}
+
+.main-plan h3{
+    font-size: 40px;
+}
+
+.main-plan button {
+    background-color: black;
+    color: white;
+    padding: 8% 5%;
+}
+
+.main-plan p {
+    font-size: 12px;
+}
+
+.back-color-white{
+    background-color: white;
+}
+
+.back-color{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* .check p::before{
+    content: url(../images/chek.svg);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+} */
+
+.icon-plan{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.check {
+    text-align: left;
+
+}

@@ -43,3 +43,48 @@
     justify-content: center;
     gap: 3vw;
 }
+/* .services-line{
+    justify-content: center;
+    gap: 10vw;
+    height: 1px;
+    width: 30px;
+    background-color: black;
+} */
+
+.box-s {
+    justify-content: center;
+    background-color: white;
+    padding: 20px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding-top: 10%;
+}
+.services-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 8%;
+    padding-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "thin-font";
+
+}
+
+.box-s button{
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    border: 1px solid black;
+    align-self: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.box-s h2{
+    font-family: "thin-font";
+    font-weight: bold;
+    letter-spacing: 3px;
+}

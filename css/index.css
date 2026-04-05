@@ -9,6 +9,7 @@
     src: url("../fonts/light-font.ttf") format("opentype");
  }
  
+
  html{
     scroll-behavior: smooth;
  }
@@ -26,15 +27,15 @@
 }
 .video-bg{
     position: fixed;
-    width: 100%;
+    top: 80px;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
     object-fit: cover;
     overflow: hidden;
 }
 
 .content{
-    /* position: relative; */
-    /* z-index: 1; */
     color: black;
     display: flex;
     flex-direction: column;
@@ -46,7 +47,14 @@
     color: white;
     padding: 10px 15px;
     width: fit-content;
+}
+
+#book-now{
     align-self: center;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    width: fit-content;
 }
 
 .content p {
@@ -57,9 +65,10 @@
 }
 
 .content h1 {
-    font-size: clamp(60px, 10vw, 100px);
+    font-size: clamp(30px, 10vw, 100px);
     font-family: "name-font";
     letter-spacing: 20px;
+    text-align: center;
 }
 
 .content h5 {
@@ -82,10 +91,11 @@
 }
 
 .header-line-two{
-    margin-left: 19%;
+    margin-left: 20vw;
     width: 2.25rem;
     height: 1.5px;
     background-color: black;
+    margin-top: 10px;
 
 }
 .aboutme{
@@ -99,9 +109,9 @@
     display: flex;
     flex-direction:column;
     gap: 40px;
-    max-width: 400px;
     margin-top: 30px;
-    margin-left: 20%;
+    margin-left: 10%;
+    padding: 5%;
 }
 
 .text p{
@@ -114,13 +124,12 @@
     background-image: url(../images/about-me.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
     width: 50vw;
 }
 
 .text h2{
     font-family: "name-font";
-    font-size: 42px;
+    font-size: clamp(20px, 10vw, 40px);
     letter-spacing: 4px;
 }
 
@@ -189,13 +198,10 @@ button:hover{
 }
 
 .upper h3{
-    font-size: 45px;
+    font-size: clamp(20px, 10vw, 40px);
     font-family: "name-font";
-    margin-left: 19%;
+    margin-left: 20vw;
     letter-spacing: 5px;
-
-
-
 }
 .box{
     border: 8px solid black;
@@ -259,4 +265,54 @@ button:hover{
     background-color: white;
     color: black;
     border: 1px solid black;
+}
+
+@media screen and (max-width: 520px){
+    .aboutme{
+        flex-direction: column;
+    }
+    .main-container{
+        background-image: none;
+        background-color: white;
+    }
+    .free-button{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 900px){
+    .img{
+        background-position: 15% ;
+    }  
+    .text {
+        margin-left: 3%;
+    }
+    .upper h3, .header-line-two {
+        margin-left: 10%;
+    }
+
+    header{
+        position:relative;
+    }
+
+    .video-bg{
+        position: absolute;
+        top: 0px;
+    }
+    .video-parent{
+        position: relative;
+    }
+    .video-container{
+        min-height: 80vh;
+    }
+
+    
+}
+@media screen and (max-width: 750px){
+    .img{
+        background-position:15%;
+        width: 100%;
+    }
+    .aboutme{
+        flex-direction: column;
+    }
 }

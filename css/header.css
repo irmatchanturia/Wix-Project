@@ -90,6 +90,7 @@ nav a:hover{
 
     header{
         justify-content: flex-start;
+        position:relative;
     }
 
     .container{

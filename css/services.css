@@ -32,7 +32,7 @@
 }
 
 .main-services h1{
-    font-size: 40px;
+    font-size: clamp(20px, 3vw, 50px);
     letter-spacing: 5px;
     font-family: "name-font";
     margin-bottom: 10%;
@@ -43,13 +43,6 @@
     justify-content: center;
     gap: 3vw;
 }
-/* .services-line{
-    justify-content: center;
-    gap: 10vw;
-    height: 1px;
-    width: 30px;
-    background-color: black;
-} */
 
 .box-s {
     justify-content: center;
@@ -70,7 +63,6 @@
     margin-left: 20%;
     margin-right: 20%;
     font-family: "thin-font";
-
 }
 
 .box-s button{
@@ -85,6 +77,40 @@
 
 .box-s h2{
     font-family: "thin-font";
+    font-size: clamp(20px, 2vw, 20px);
     font-weight: bold;
     letter-spacing: 3px;
+}
+
+.services-dropdown select {
+    display: none;
+    border: none;
+    width: 70vw;
+    height: 7vw;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: "thin-font";
+}
+
+@media screen and (max-width: 1000px){
+    .services-box{
+        grid-template-columns: 1fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+    } 
+}
+@media screen and (max-width: 720px){
+    .services-box{
+        grid-template-columns: 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+    } 
+
+    .nav-services{
+        display: none;
+    }
+    .services-dropdown select {
+        display: block;
+    }
+
 }

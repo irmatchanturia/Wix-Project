@@ -81,3 +81,25 @@
     font-weight: bold;
     letter-spacing: 3px;
 }
+@media screen and (max-width: 1000px){
+    .services-box{
+        grid-template-columns: 1fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+    } 
+}
+@media screen and (max-width: 720px){
+    .services-box{
+        grid-template-columns: 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+    } 
+
+    .nav-services{
+        display: none;
+    }
+    .services-dropdown select {
+        display: block;
+    }
+
+}

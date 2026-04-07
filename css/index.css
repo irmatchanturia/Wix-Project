@@ -82,6 +82,7 @@
     padding: 12px 30px;
     border: 1px solid black;
     align-self: center;
+    cursor: pointer;
 }
 
 .header-line{
@@ -140,6 +141,7 @@
     padding: 12px 30px;
     border: 1px solid black;
     font-family: "thin-font";
+    cursor: pointer;
 }
 
 button:hover{
@@ -242,6 +244,7 @@ button:hover{
     color: white;
     padding: 12px 30px;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 button:hover{
@@ -258,8 +261,20 @@ button:hover{
     border: 1px solid black;
     margin: auto;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
+.child-container a{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.last-button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
 
 #btn:hover{
     background-color: white;

@@ -19,7 +19,7 @@
 
 .main-plan h1{
     font-family: "name-font";
-    font-size: 40px;
+    font-size: clamp(20px, 5vw, 40px);
     letter-spacing: 10px;
     text-align: center;
     padding-top: 5%;
@@ -39,6 +39,17 @@
     justify-content:center;
     column-gap: 3%;
     padding-bottom: 2%;
+    align-items: stretch;
+}
+
+.plan {
+    display: grid;
+    grid-template-rows: auto 1fr ;
+    height: 100%;
+}
+
+.plan .check{
+    flex-grow: 1;
 }
 
 .box-plans{
@@ -51,6 +62,7 @@
     font-family: "thin-font";
     font-weight: bold;
     line-height: 1.5;
+    height: 100%;
 }
 
 .main-plan h2{
@@ -86,5 +98,26 @@
 
 .check {
     text-align: left;
+}
+
+@media (max-width: 900px) {
+    .plans-box {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+    .main-plan{
+        padding-top: 30px;
+    }
+     .main-plan h1{
+        padding-top: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .plans-box {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 
 }

@@ -17,6 +17,9 @@
     padding-top: 130px;
 }
 
+.background-blog{
+    background-color: white;
+}
 .blog-main h1{
     font-size: clamp(15px, 9vw, 50px);
     letter-spacing: 3px;
@@ -93,10 +96,15 @@
 }
 
 .blog-nav{
-    padding: 10px;
+    padding: 20px;
     margin-left:45%;
 }
 
 .blog-nav a{
-    padding: 10px;
+    padding: 20px;
+}
+
+
+.blog-change{
+    margin-top:
 }

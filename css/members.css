@@ -1,0 +1,99 @@
+
+ @font-face {
+    font-family: "name-font";
+    src: url("../fonts/name-font.ttf") format("opentype");
+ }
+
+ @font-face {
+    font-family: "thin-font";
+    src: url("../fonts/light-font.ttf") format("opentype");
+ }
+
+body{
+    background-image: url(../images/site-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.members-dropdown{
+    padding-top: 90px;
+    border: white;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.members-main{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    width: 70vw;
+    min-height: 500px;
+    /* padding-top: 10px; */
+    margin-bottom: 10%;
+    /* padding: 20px; */
+}
+
+.members-child{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+}
+
+.members-dropdown{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+.members-dropdown select{
+    border: none;
+    width: 13%;
+    font-size: clamp(14px, 2vw, 16px);
+    font-family: "thin-font";
+    font-weight: bold;
+}
+.members-dropdown input{
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.second-members{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.second-members h1{
+    font-size: clamp(16px, 3vw, 30px);
+    align-self: center;
+    padding-bottom: 30px;
+    font-family: "name-font";
+    letter-spacing: 5px;
+}
+
+.second-members p{
+    align-self: center;
+    padding-bottom: 30px;
+    font-family: "thin-font";
+    font-weight: bold;
+}
+.second-members button{
+    display: inline-block;
+    width: 15%;
+    padding: 10px;
+    border: none;
+    background-color:#317F81;
+    color: white;
+    align-self: center;
+}
+
+.second-members button:hover{
+    background-color:#317F81;
+    text-decoration: underline;
+    color: white;
+}

@@ -20,7 +20,6 @@ body{
 
 .members-dropdown{
     padding-top: 90px;
-    border: white;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -31,11 +30,9 @@ body{
     left: 50%;
     transform: translate(-50%);
     background-color: white;
-    width: 70vw;
+    max-width: 70vw;
     min-height: 500px;
-    /* padding-top: 10px; */
     margin-bottom: 10%;
-    /* padding: 20px; */
 }
 
 .members-child{
@@ -53,7 +50,6 @@ body{
 
 .members-dropdown select{
     border: none;
-    width: 13%;
     font-size: clamp(14px, 2vw, 16px);
     font-family: "thin-font";
     font-weight: bold;
@@ -69,7 +65,7 @@ body{
     margin-top: 10%;
 }
 .second-members h1{
-    font-size: clamp(16px, 3vw, 30px);
+    font-size: clamp(16px, 2vw, 30px);
     align-self: center;
     padding-bottom: 30px;
     font-family: "name-font";
@@ -96,4 +92,41 @@ body{
     background-color:#317F81;
     text-decoration: underline;
     color: white;
+}
+
+@media screen and (max-width: 700px){
+    .second-members h1, p{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;  
+        line-height: 30px;
+    }
+
+    .second-members button{
+       width: 50%;
+   
+    }
+}
+@media screen and (max-width: 900px){
+    .members-dropdown{
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    .members-dropdown select, label {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 10px;
+    }
+    .members-dropdown select{
+        border-right: 1px solid black;
+    }
+    .members-dropdown input{
+        border-bottom: none;
+    }
+    .members-dropdown{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+    }
 }

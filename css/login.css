@@ -1,0 +1,40 @@
+ @font-face {
+    font-family: "name-font";
+    src: url("../fonts/name-font.ttf") format("opentype");
+ }
+
+ @font-face {
+    font-family: "thin-font";
+    src: url("../fonts/light-font.ttf") format("opentype");
+ }
+
+ 
+ .login-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+ }
+
+ .login-text h1{
+   font-family: "name-font";
+   font-size: clamp(15px, 4vw, 60px);
+   letter-spacing: 5px;
+ }
+
+ .login-text p{
+   font-family: "thin-font";
+ }
+
+ .login-text a{
+   background-color: #317F81;
+   color: white;
+   padding: 20px 80px;
+   font-family: "thin-font";
+   font-weight: bold;
+ }
+

@@ -22,12 +22,13 @@
 
  .login-text h1{
    font-family: "name-font";
-   font-size: clamp(15px, 4vw, 60px);
+   font-size: clamp(40px, 4vw, 60px);
    letter-spacing: 5px;
  }
 
  .login-text p{
    font-family: "thin-font";
+   font-size: clamp(15px, 1vw, 30px);
  }
 
  .login-text a{
@@ -38,3 +39,11 @@
    font-weight: bold;
  }
 
+ @media screen and (max-width: 400px){
+  .login-text{
+    padding: 30px;
+    text-align: center;
+  }
+
+
+ }

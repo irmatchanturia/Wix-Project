@@ -1,3 +1,139 @@
+ @font-face {
+    font-family: "name-font";
+    src: url("../fonts/name-font.ttf") format("opentype");
+ }
+
+ @font-face {
+    font-family: "thin-font";
+    src: url("../fonts/light-font.ttf") format("opentype");
+ }
+body{
+    background-image: url(../images/site-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.book-now{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    max-width: 65vw;
+    min-height: 500px;
+    margin-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
 .calendar{
-    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar-header{
+    padding-top: 130px;
+}
+.calendar-header h1{
+    font-family: "name-font";
+    font-size: clamp(20px, 5vw, 40px);
+    margin-top: 8%;
+    margin-right: 20%;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    line-height: 45px;
+}
+
+.calendar-header p{
+    font-family: "thin-font";
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+.calendar-header a{
+    color: black;
+    font-family: "thin-font";
+    font-weight: bold;
+}
+
+.calendar-header-second{
+    font-family: "thin-font";
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#time-zone{
+    font-size: clamp(13px, 1vw, 15px);
+}
+
+.book-now-line{
+    height: 0.5px;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.calendar-weekday{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    font-family: "thin-font";
+    font-weight: bold;
+}
+
+.calendar-days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    font-family: "thin-font";
+    font-weight: bold;
+}
+
+.calendar-times{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    text-align: center;
+    font-family: "thin-font";
+    font-weight: bold;
+
+}
+
+.calendar-times p{
+    border: 2px solid gray;
+    padding: 15px 40px;
+}
+
+.date{
+    font-family: "thin-font";
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+.calendar{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.styled-button{
+    background-color: black;
+    color: white;
+}
+
+.styled-number{
+    color: gray;
+}
+
+.colored-number{
+    background-color: black;
+    color: white;
 }

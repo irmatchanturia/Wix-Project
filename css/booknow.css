@@ -120,8 +120,6 @@ body{
 .calendar{
     display: flex;
     justify-content: space-around;
-    text-align: center;
-    align-items: center;
 }
 
 .styled-button{
@@ -133,7 +131,42 @@ body{
     color: gray;
 }
 
+.calendar-number{
+    text-align: center;
+    padding: 5px;
+}
+
 .colored-number{
     background-color: black;
     color: white;
+}
+
+.book-now-bottom h4{
+    padding-top: 10%;
+    padding-bottom: 10px;
+    font-family: "thin-font";
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.book-now-bottom h5{
+    padding-bottom: 10px;
+    font-family: "thin-font";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.book-now-bottom p{
+    font-family: "thin-font";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.book-now-bottom button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

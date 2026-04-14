@@ -7,7 +7,7 @@
     font-family: "thin-font";
     src: url("../fonts/light-font.ttf") format("opentype");
  }
-.blog-main{
+.back-image{
     background-image: url(../images/blog-photo.avif);
     background-size: cover;
     background-position: center;
@@ -17,15 +17,17 @@
     padding-top: 100px;
 }
 
-.background-blog{
-    background-color: white;
-}
 .blog-main h1{
     font-size: clamp(15px, 9vw, 50px);
     letter-spacing: 3px;
     font-family: "name-font";
     margin-left: 17%;
     margin-bottom: 3%;
+}
+
+.blog-change{
+    margin-top: -450px;
+
 }
 
 .blog-line{

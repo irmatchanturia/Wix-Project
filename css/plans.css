@@ -98,6 +98,9 @@
     text-align: left;
 }
 
+.plan{
+    padding-bottom: 30px;
+}
 @media (max-width: 900px) {
     .plans-box {
         grid-template-columns: repeat(2, 1fr);

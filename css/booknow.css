@@ -23,7 +23,6 @@ body{
     background-color: white;
     max-width: 65vw;
     min-height: 500px;
-    margin-bottom: 10%;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
@@ -170,3 +169,64 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+@media screen and (max-width: 900px){
+    .calendar{
+        flex-direction: column;
+    }
+
+    .calendar-times{
+        margin-top: 15px;
+    }
+    .calendar-header{
+        padding-top: 30px;
+    }
+
+    .calendar-header-second{
+        flex-direction: column;
+    }
+    .date{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .calendar-times p{
+        padding: 4%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .calendar-days{
+        gap: 5px;
+    }
+    .book-now{
+        max-width: 90vw;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .calendar-days{
+        font-size: 13px;
+    }
+    .date{
+        font-size: 14px;
+    }
+    .calendar-header h1{
+        line-height: 30px;
+    }
+    .calendar-header p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .calendar-header-second{
+        gap: 10px;
+    }
+
+}
+
+

@@ -92,6 +92,17 @@
     font-family: "thin-font";
 }
 
+.line{
+    background-color: gray;
+    height: 1px;
+    width: 160%;
+    margin-top: 15px;
+}
+
+
+#career-line{
+    width: 100%;
+}
 @media screen and (max-width: 1000px){
     .services-box{
         grid-template-columns: 1fr 1fr;

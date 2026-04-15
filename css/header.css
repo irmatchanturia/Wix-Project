@@ -41,7 +41,7 @@
 
 .coach{
     color: #555555;
-    font-size: clamp(10px, 5vw, 20px);
+    font-size: clamp(10px, 1vw, 20px);
     font-family: "thin-font";
     font-weight:600;
     letter-spacing: 1px;

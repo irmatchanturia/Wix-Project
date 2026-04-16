@@ -1,0 +1,33 @@
+ @font-face {
+    font-family: "name-font";
+    src: url("../fonts/name-font.ttf") format("opentype");
+ }
+
+ @font-face {
+    font-family: "thin-font";
+    src: url("../fonts/light-font.ttf") format("opentype");
+ }
+
+body{
+    background-image: url(../images/site-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+.guides-header{
+    padding-top: 100px;
+}
+.guides-line{
+    height: 2px;
+    background-color: black;
+    width: 3%;
+}
+.guides-header h1{
+    font-size: clamp(16px, 2vw, 30px);'
+    font-family: "name-font";
+
+}

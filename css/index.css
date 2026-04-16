@@ -85,6 +85,14 @@
     cursor: pointer;
 }
 
+.box a {
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    border: 1px solid black;
+    align-self: center;
+    cursor: pointer;
+}
 .header-line{
     width: 2.25rem;
     height: 1.5px;

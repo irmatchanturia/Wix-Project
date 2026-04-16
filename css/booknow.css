@@ -91,6 +91,7 @@ body{
     margin-top: 20px;
     font-family: "thin-font";
     font-weight: bold;
+    text-align: center;
 }
 
 .calendar-times{
@@ -170,7 +171,7 @@ body{
     padding-bottom: 15px;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1200px){
     .calendar{
         flex-direction: column;
     }
@@ -187,17 +188,27 @@ body{
     }
     .date{
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
     }
+     .calendar-header{
+        padding-top: 100px;
+    }
+
 }
 
 
 @media screen and (max-width: 700px){
     .calendar-times p{
-        padding: 4%;
+        padding: 8%;
+    }
+}
+@media screen and (max-width: 900px){
+    .calendar-header{
+        padding-top: 20px;
     }
 
 }
+
 
 @media screen and (max-width: 600px){
     .calendar-days{

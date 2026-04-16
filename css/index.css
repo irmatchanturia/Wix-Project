@@ -184,7 +184,6 @@ button:hover{
     width: 100%;
     display: flex;
     justify-content: left;
-    align-items: left;
     flex-direction: column;
     gap: 30px;
 }
@@ -195,8 +194,6 @@ button:hover{
     align-items: stretch;
     gap: 18px;
     justify-content: center;
-
-
 }
 
 .upper{

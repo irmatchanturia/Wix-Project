@@ -20,14 +20,172 @@ body{
 
 .guides-header{
     padding-top: 100px;
+    padding-bottom: 3%;
 }
 .guides-line{
     height: 2px;
     background-color: black;
     width: 3%;
+    margin-left: 20%;
+    margin-top: 5%;
 }
 .guides-header h1{
-    font-size: clamp(16px, 2vw, 30px);'
+    font-size: clamp(16px, 4vw, 50px);
+    letter-spacing: 5px;
     font-family: "name-font";
+    margin-left: 20%;
+    padding-top: 3%;
+}
 
+.guides-header p{
+    margin-left: 20%;
+    padding-right: 40%;
+    font-size: clamp(13px, 1vw, 15px);
+    line-height: 25px;
+    font-family: "thin-font";
+    font-weight:bold;
+    margin-top: 2%;
+}
+
+.guides-main{
+    background-color: white;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-bottom: 20%;
+    padding-top: 20px;
+    padding-bottom: 10%;
+    padding-right: 10px;
+    padding-left: 10px ;
+    font-family: "thin-font";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.guides-input{
+    display: block;
+    width: 50%;
+    margin-left: 50%;
+    padding-top: 3%;
+}
+
+.guides-input input{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.guides-input input::before{
+    content: "<i class="bi bi-search"></i>"
+}
+
+.guides-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.content-item{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid gray;
+}
+
+.content-item input{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.item-first{
+    display: flex;
+}
+
+.item-second{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.item-second p{
+    font-size: clamp(12px, 14px, 20px);
+}
+.content-clients{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid gray;
+}
+
+
+.clients-first{
+    display: flex;
+}
+
+.clients-second{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+
+}
+
+.content-clients input{
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+.content-free{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid gray;
+}
+
+.content-free input{
+    width: 20px;
+    margin-right: 5px;
+}
+.free-first{
+    display: flex;
+}
+
+.free-second{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+@media screen and (max-width:1100px) {
+    .content-item{
+        display: none;
+    }   
+}
+
+@media screen and (max-width:900px) {
+    .content-clients{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content-free{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .guides-input{
+        margin-left: 5px;
+    }
+    .free-second, .clients-second {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .free-second, .clients-second{
+        flex-direction: column;
+        gap: 5px;
+        padding-left: 25px;
+    }
 }

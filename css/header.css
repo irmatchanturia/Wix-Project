@@ -90,7 +90,7 @@ nav a:hover{
     .header-nav{
         display: none;
     }
-
+    
     header{
         justify-content: flex-start;
         position:relative;
@@ -104,15 +104,14 @@ nav a:hover{
     }
 
     .name{
-    text-align: left;
+        text-align: left;
     } 
 
     .left-side {
-    place-items:inherit;
-    padding-left: 5px;
-    padding-top: 5px;
+        place-items:inherit;
+        padding-left: 5px;
+        padding-top: 5px;
     }
-
 
 }
     

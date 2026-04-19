@@ -17,14 +17,14 @@
 <header>
         <div class="container">
             <div class="left-side">
-            <a href="../html/index.html" class="name">ALLAN JOHNSON</a>
-            <p class="coach">Personal Life Coach</p>
-        </div>
+                <a href="../html/index.html" class="name">ALLAN JOHNSON</a>
+                <p class="coach">Personal Life Coach</p>
+            </div>
 
             <div class="right-side">
-                <img class="burger-menu-icon" src="../images/burger-menu-icon.png" alt="burger-menu">
+                <button class="burger" id="burger-button">&#9776;</button>
                 <nav class="header-nav">
-                <a href="../html/index.html#about">About</a>
+                <a href="#about">About</a>
                 <a href="services.html">Services</a>
                 <a href="plans.html">Plans</a>
                 <a href="blog.html">Blog</a>
@@ -32,12 +32,29 @@
                 <a href="../html/index.html#contact">Contact</a>
                 <a href="members.html">Members</a>
                 <div id="login">
-                    <a href="login.html" class="login"> <i class="fa-solid fa-circle-user"></i> Log In</a>
-            `   </div>
+                <a href="login.html" class="login"> <i class="fa-solid fa-circle-user"></i> Log In</a>
+                </div>
                 </nav>
             </div>
         </div>
+
+            <div class="mobile-burger-nav">
+                <button class="close-nav" id="close-button">&#10005;</button>
+                <nav class="mobile-header-nav">
+                    <div id="login">
+                    <a href="login.html" id="login-mobile"> <i class="fa-solid fa-circle-user"></i> Log In</a>
+                    </div>
+                    <a href="#about">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="plans.html">Plans</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="guides.html">Guides</a>
+                    <a href="../html/index.html#contact">Contact</a>
+                    <a href="members.html">Members</a>    
+                </nav>
+            </div>
 </header>
+
 <div class="main-plan">
     <h1>CHOOSE THE PLAN FOR YOU</h1>
     <p class="main-p">
@@ -180,6 +197,7 @@
         <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
         </svg>  
     </div>
+    <script src="../css/header.js"></script>
 
 </body>
 </html>

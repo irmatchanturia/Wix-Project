@@ -21,24 +21,25 @@ body{
 .guides-header{
     padding-top: 100px;
     padding-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 1000px;
+    margin: auto;
 }
 .guides-line{
     height: 2px;
     background-color: black;
     width: 3%;
-    margin-left: 20%;
     margin-top: 5%;
 }
 .guides-header h1{
     font-size: clamp(16px, 4vw, 50px);
     letter-spacing: 5px;
     font-family: "name-font";
-    margin-left: 20%;
     padding-top: 3%;
 }
 
 .guides-header p{
-    margin-left: 20%;
     padding-right: 40%;
     font-size: clamp(13px, 1vw, 15px);
     line-height: 25px;
@@ -49,8 +50,10 @@ body{
 
 .guides-main{
     background-color: white;
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 1000px;
+    margin: auto;
     margin-bottom: 20%;
     padding-top: 20px;
     padding-bottom: 10%;
@@ -161,31 +164,42 @@ body{
     .content-item{
         display: none;
     }   
+
+    .guides-main, .guides-header{
+        margin-left: 10%;
+        margin-right: 10% ;
+    }
+}
+@media screen and (max-width:900px){
+    .guides-header{
+        padding-top: 50px;
+    }
+    .guides-header p{
+        width: 100%;
+        padding-right: 10px;
+    }
 }
 
-@media screen and (max-width:900px) {
+
+
+@media screen and (max-width:600px) {
     .content-clients{
         flex-direction: column;
         gap: 10px;
     }
-
     .content-free{
         flex-direction: column;
         gap: 10px;
     }
 
-    .guides-input{
-        margin-left: 5px;
+    .clients-second, .free-second{
+        display: none;
     }
-    .free-second, .clients-second {
-        width: 70%;
+    .guides-input{
+        margin-left: 0px;
+        width: 100%;
     }
 }
 
-@media screen and (max-width:700px) {
-    .free-second, .clients-second{
-        flex-direction: column;
-        gap: 5px;
-        padding-left: 25px;
-    }
-}
+
+

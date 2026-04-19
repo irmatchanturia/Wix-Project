@@ -19,10 +19,10 @@
 
 .container {
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 0px;
-    justify-content: center;
-    gap: 8vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 20px;
 }
 
 .right-side{
@@ -77,16 +77,42 @@ nav a:hover{
     color: rgb(18, 169, 154);
 }
 
-.burger-menu-icon{
-    width: 30px;
+#burger-button{
     display: none;
 }
 
+.mobile-burger-nav{
+    display: none;
+}
+
+.menu-open #burger-button{
+    display: none;
+}
+
+.menu-open .left-side{
+    display: none;
+}
+
+    #burger-button{
+        display: none;
+        font-size: 28px;     
+        background: none;     
+        border: none;
+        cursor: pointer;
+        color: black;
+        padding: 5px 10px;
+    }
+
+    #burger-button:hover{
+        color: rgb(91, 168, 160);
+    }
+
 
 @media screen and (max-width: 900px){
-    .burger-menu-icon{
+    #burger-button{
         display: block;
     }
+
     .header-nav{
         display: none;
     }
@@ -97,22 +123,84 @@ nav a:hover{
     }
 
     .container{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 5px;
+        padding: 5px 10px;
     }
 
     .name{
         text-align: left;
     } 
 
-    .left-side {
-        place-items:inherit;
-        padding-left: 5px;
-        padding-top: 5px;
+   .left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+    .mobile-burger-nav{
+        position: fixed;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100vh;
+        background: white;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s ease;
     }
 
+    .mobile-burger-nav.active{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .mobile-header-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 20%;
+
+    }
+
+
+    .mobile-header-nav a{
+        display: block;              
+        width: 100%;
+        text-align: center;
+        padding: 14px 0;             
+        border-bottom: 1px solid #ccc;
+        font-size: clamp(16px, 4vw, 20px);
+        font-family: "thin-font";
+        color: black;
+        text-decoration: none;
+    }
+
+    #login-mobile{
+        color: rgb(18, 169, 154);
+        border-bottom: none;
+        padding-bottom: 10px;
+        font-size: clamp(16px, 4vw, 25px);
+
+    }
+
+    .mobile-header-nav a:hover{
+        color: rgb(91, 168, 160);
+    }
+    .close-nav{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
 }
     
 

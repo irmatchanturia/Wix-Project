@@ -1,10 +1,13 @@
-const burgerMenu = document.getElementsByClassName('burger-menu-icon')[0];
-const navList = document.getElementsByClassName('header-nav')[0];
-const logo = document.getElementsByClassName('left-side')[0];
+const burgerBtn = document.getElementById('burger-button');
+const closeBtn = document.getElementById('close-button');
+const mobileNav = document.querySelector('.mobile-burger-nav');
 
-
-burgerMenu.addEventListener('click', () => {
-    navList.classList.add('active');
-    logo.classList.add('inactive');
+burgerBtn.addEventListener('click', () => {
+    mobileNav.classList.add('active');
+    document.body.classList.add('menu-open');
 });
 
+closeBtn.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+    document.body.classList.remove('menu-open');
+});

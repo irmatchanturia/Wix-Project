@@ -94,6 +94,10 @@ body{
     color: white;
 }
 
+#search-bar{
+    width: 100%;
+}
+
 @media screen and (max-width: 700px){
     .second-members h1, p{
         padding-left: 10px;
@@ -116,15 +120,19 @@ body{
     .members-dropdown select, label {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        padding: 10px;
+        padding: 5px;
+        width: 50%;
     }
     .members-dropdown select{
         border-right: 1px solid black;
+        width: 50%;
     }
     .members-dropdown input{
         border-bottom: none;
+        width: 50%;
     }
     .members-dropdown{
+        display: flex;
         padding-left: 0px;
         padding-right: 0px;
         margin-top: 0px;

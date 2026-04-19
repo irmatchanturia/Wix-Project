@@ -19,10 +19,11 @@
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 40px 20px;
+    gap: 5%;
+    padding: 20px 20px;
 }
 
 .right-side{
@@ -93,19 +94,19 @@ nav a:hover{
     display: none;
 }
 
-    #burger-button{
-        display: none;
-        font-size: 28px;     
-        background: none;     
-        border: none;
-        cursor: pointer;
-        color: black;
-        padding: 5px 10px;
-    }
+#burger-button{
+    display: none;
+    font-size: 28px;     
+    background: none;     
+    border: none;
+    cursor: pointer;
+    color: black;
+    padding: 5px 10px;
+}
 
-    #burger-button:hover{
-        color: rgb(91, 168, 160);
-    }
+#burger-button:hover{
+    color: rgb(91, 168, 160);
+}
 
 
 @media screen and (max-width: 900px){
@@ -123,6 +124,7 @@ nav a:hover{
     }
 
     .container{
+        justify-content: space-between;
         padding: 5px 10px;
     }
 
@@ -131,11 +133,11 @@ nav a:hover{
     } 
 
    .left-side{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
 
     .mobile-burger-nav{
         position: fixed;
@@ -202,5 +204,6 @@ nav a:hover{
         cursor: pointer;
     }
 }
-    
+
+ 
 

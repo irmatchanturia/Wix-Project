@@ -83,13 +83,16 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 40px;
+    gap: 60px;
 }
 
 .bubble-chart {
   position: relative;
-  width: 600px;
+  width: 500px;
   height: 400px;
   background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   border-left: 2px solid #ddd;;
   border-bottom: 2px solid #ddd;;
   margin-bottom: 50px;
@@ -99,18 +102,6 @@
 .bubble {
   position: absolute;
   border-radius: 50%;
-  animation: float 2s ease-in-out infinite;
-}
-@keyframes float {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    transform: translate(5px, -5px) scale(1.08);
-  }
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
 }
 
 .pink {
@@ -169,7 +160,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  gap: 10%;
+  gap: 8%;
   font-size: 12px;
   padding-bottom: 40px;
   color: gray;
@@ -212,14 +203,118 @@
 
 
 
+.bar-chart {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
 
+.bar {
+    width: 40px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
 
+.bar:hover {
+    transform: scale(1.05);
+}
 
+.segment {
+    width: 100%;
+}  
 
+.blue {
+    background: #4F8CFF;
+    height: 40px;
+}
 
-@media screen and(max-width: 700px) {
-    .dashboard-first-line{
-        flex-direction: column;
+.red {
+    background: #FF6B6B;
+    height: 60px;
+}
+
+.orange {
+    background: #FFB84D;
+    height: 80px;
+}
+
+.yellow {
+    background: #FFD93D;
+    height: 120px;
+}
+
+#s1 {
+     height: 30px;
     }
- 
+#s2 { 
+    height: 60px;
+    }
+#s3 { 
+    height: 40px; 
+    }
+#s4 { 
+    height: 90px; 
+    }
+#s5 {
+    height: 70px; 
+    }
+#s6 { 
+    height: 20px; 
+    }
+#s7 { 
+    height: 100px;
+    }
+#s8 { 
+    height: 50px; 
+}
+
+#s9{
+    height: 70px;
+}
+
+#s10{
+    height: 40px;
+}
+
+#s11{
+    height: 20px;
+}
+
+#s12{
+    height: 10px;
+}
+
+.bar-chart .y-axis {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  color: gray;
+}
+
+.bar-chart .x-axis {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: gray;
 }

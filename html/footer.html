@@ -51,25 +51,25 @@
 </div>
 
 <div class="footer-right">
-    <form>
-        <div class="name-field">
-        <label for="">Enter Your Name *</label>
-        <input type="text" required>
-        </div>
-                <div class="email-field">
-                <label for="">Enter Your Email *</label>
-                <input type="email" required>
-                </div>
-                <div class="subject">
-                <label for="">Enter Your Subject *</label>
-                <input type="text" required>
-                </div>
-                <div class="textarea">
-                <label for="">Message *</label>
-                <textarea rows="8" required></textarea>
-                </div>
-                <button class="footer-button" type="submit">Submit</button>
-            </form>
+<form>
+    <div class="name-field">
+        <label for="name">Enter Your Name *</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+    </div>
+    <div class="email-field">
+        <label for="email">Enter Your Email *</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+    </div>
+    <div class="subject">
+        <label for="subject">Enter Your Subject *</label>
+        <input type="text" id="subject" name="subject" required>
+    </div>
+    <div class="textarea">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="8" required></textarea>
+    </div>
+    <button class="footer-button" type="submit">Submit</button>
+</form>
 </div>
 </div>
 </footer>

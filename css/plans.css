@@ -44,16 +44,6 @@
     align-items: stretch;
 }
 
-.plan {
-    display: grid;
-    grid-template-rows: auto 1fr ;
-    height: 100%;
-}
-
-.plan .check{
-    flex-grow: 1;
-}
-
 .box-plans{
     text-align: center;
     border: 2px solid black;
@@ -64,7 +54,8 @@
     font-family: "thin-font";
     font-weight: bold;
     line-height: 1.5;
-    height: 100%;
+    max-height: 390px;
+    min-height: 390px;
 }
 
 .main-plan h2{

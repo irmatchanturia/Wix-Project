@@ -87,16 +87,17 @@
 }
 
 .bubble-chart {
-  position: relative;
-  width: 500px;
-  height: 400px;
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  border-left: 2px solid #ddd;;
-  border-bottom: 2px solid #ddd;;
-  margin-bottom: 50px;
-  padding-bottom: 40px;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-left: 2px solid #ddd;;
+    border-bottom: 2px solid #ddd;;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .bubble {
@@ -121,23 +122,71 @@
   width: 70px;
   height: 70px;
 }
-.bubble:nth-child(1)  { top: 20px;  left: 40px; }
-.bubble:nth-child(2)  { top: 80px;  left: 120px; }
-.bubble:nth-child(3)  { top: 40px;  left: 220px; }
-.bubble:nth-child(4)  { top: 150px; left: 300px; }
+.bubble:nth-child(1)  {
+    top: 5%;
+    left: 7%;
+}
+.bubble:nth-child(2)  { 
+    top: 10%;
+    left: 20%; 
+}
+.bubble:nth-child(3)  {
+    top: 10%;  
+    left: 50%; 
+}
+.bubble:nth-child(4)  {
+    top: 20%; 
+    left: 60%; 
+}
 
-.bubble:nth-child(5)  { top: 200px; left: 60px; }
-.bubble:nth-child(6)  { top: 260px; left: 150px; }
-.bubble:nth-child(7)  { top: 160px; left: 210px; }
+.bubble:nth-child(5)  { 
+    top: 50%; 
+    left: 30%; 
+}
+.bubble:nth-child(6)  { 
+    top: 65%; 
+    left: 30%; 
+}
 
-.bubble:nth-child(8)  { top: 310px; left: 40px; }
-.bubble:nth-child(9)  { top: 280px; left: 140px; }
-.bubble:nth-child(10) { top: 300px; left: 240px; }
+.bubble:nth-child(7)  { 
+    top: 40%; 
+    left: 42%; 
+}
 
-.bubble:nth-child(11) { top: 100px; left: 350px; }
-.bubble:nth-child(12) { top: 200px; left: 380px; }
-.bubble:nth-child(13) { top: 300px; left: 420px; }
-.bubble:nth-child(14) { top: 120px; left: 50px; }
+.bubble:nth-child(8)  {
+    top: 75%; 
+    left: 8%; 
+}
+
+.bubble:nth-child(9)  { 
+    top: 70%; 
+    left: 28%; 
+}
+
+.bubble:nth-child(10) { 
+    top: 70%; 
+    left: 48%; 
+}
+
+.bubble:nth-child(11) { 
+    top: 25%; 
+    left: 70%; 
+}
+
+.bubble:nth-child(12) { 
+    top: 50%; 
+    left: 50%; 
+}
+
+.bubble:nth-child(13) { 
+    top: 75%; 
+    left: 65%; 
+}
+
+.bubble:nth-child(14) { 
+    top: 30%; 
+    left: 10%; 
+}
 
 .y-axis {
   position: absolute;
@@ -156,11 +205,11 @@
 .x-axis {
   position: absolute;
   bottom: -65px;
-  left: 0;
-  width: 100%;
+  left:15px;
+  width: 85%;
   display: flex;
-  justify-content: flex-start;
-  gap: 8%;
+  justify-content: space-between;
+  /* gap: 9%; */
   font-size: 12px;
   padding-bottom: 40px;
   color: gray;
@@ -217,8 +266,7 @@
 }
 
 .bar {
-    width: 40px;
-    height: 300px;
+    width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -257,25 +305,25 @@
 
 #s1 {
      height: 30px;
-    }
+}
 #s2 { 
     height: 60px;
-    }
+}
 #s3 { 
     height: 40px; 
-    }
+}
 #s4 { 
     height: 90px; 
-    }
+}
 #s5 {
     height: 70px; 
-    }
+}
 #s6 { 
     height: 20px; 
-    }
+}
 #s7 { 
     height: 100px;
-    }
+}
 #s8 { 
     height: 50px; 
 }
@@ -311,10 +359,11 @@
 .bar-chart .x-axis {
   position: absolute;
   bottom: -60px;
-  left: 0;
-  width: 100%;
+  left: 30px;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   font-size: 12px;
   color: gray;
 }
+
